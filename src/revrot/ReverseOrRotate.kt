@@ -8,7 +8,7 @@ fun revRot(nums: String, sz: Int): String {
 
     if (sz <= 0 || sz > nums.length || nums.trim().isEmpty()) return ""
 
-    while (nums.length > last && last + sz < nums.length) {
+    while (nums.length > last && last + sz <= nums.length) {
         chunks.add(nums.substring(last, last + sz))
         last += sz
     }
